@@ -1,0 +1,257 @@
+*{
+    box-sizing: border-box;
+}
+
+a{
+    cursor:pointer;
+    text-decoration: none;
+    color:black;
+}
+body{
+    max-width:100%;
+    margin:0;
+    padding:0;
+}
+
+html
+{
+font-family:'Roboto';
+}
+
+.logo{
+    font-family:"shrikhand";
+    font-weight:normal;
+}
+
+.btn--pink {
+    color: white;
+    background: #ff79DA;
+    height: 40px;
+    border-radius: 20px;
+    width: 50%;
+    margin-bottom:30px;
+}
+
+.footer{
+    background:#353535;
+    line-height: 2rem;
+    .footer--link{
+        color:white;
+    }
+    .footer__logo{
+        color:white;
+        font-weight:normal;
+        padding-left:40px;
+        padding-top:20px;
+    }
+}
+
+
+
+
+/*-----------page d accuiel-----------------------------*/
+.header{
+    background:white;
+    .header__logo{
+        font-weight:normal;
+        text-align:center;
+        font-family:"Shrikhand";
+    }
+    
+}
+
+
+
+h3{
+    padding-left:10px;
+}
+
+
+.search{
+    background-color:whitesmoke;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+
+
+   
+.search h2{
+       font-size:1rem;
+}
+.search p{
+    font-size:0.5rem;
+}
+.search_title{
+
+width:70%;
+}
+
+.form{
+ width:100%;
+
+    .form__input{
+    width:100%;
+    height:50px;
+    background:lightgrey;
+    }
+}
+   
+
+
+.logo
+{
+font-family:'Shrikhand';
+font-weight:normal;
+}
+
+.features{
+background:white;
+margin-top: 50px;
+display: flex;
+flex-direction: column;
+align-items: center;
+
+    .features__btn{
+    height: 70px;
+    box-shadow: 3px 5px 3px 4px lightgrey;
+    border-radius: 15px;
+    width: 70%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: whitesmoke;
+    }
+}
+
+
+
+div.btn:nth-child(4) {
+    background: ghostwhite;
+}
+   
+.features__title {
+    align-self: flex-start;
+    }
+
+.features .fas{
+    color:#9356dc;
+}
+
+.restos {
+    background: whitesmoke;
+    
+    
+    }
+
+    .cards{
+        display:flex;
+        flex-direction:column;
+        justify-content:space-around;
+        height:100%;
+
+        .cards__box{
+            height:300px;
+            width:100%;
+         }
+    }
+
+    
+
+    .figure{
+        height:80%;
+        border-radius:20px;
+        display:flex;
+       flex-direction: column;
+        box-shadow:1px 1px 2px 2px lightgrey;
+
+        .figure__img{
+            height:80%;
+            width:100%;
+            object-fit:cover;
+            border-radius:20px 20px 0px 0px;
+        }
+        
+    }
+
+
+.caption{
+    background: white;
+    border-radius:0px 0px 20px 20px;
+    line-height:0.5rem;
+    padding-right:0.5rem;
+    padding-left:0.5rem;
+
+    .caption__title{
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+    }
+}
+
+
+.list{
+    list-style-type:none;
+        
+}
+
+
+
+
+
+   
+
+        
+     
+
+               
+
+  /*--------------------------------------PAGES MENU______________---------------------*/ 
+.header2{
+    display:flex;
+    align-items:center;
+}      
+
+.menu{
+    width:100%;
+
+    .menu__img{
+        height:250px;
+        width:100%;
+        object-fit:cover;
+    }
+        .menu__title{
+            font-family: "shrikhand";
+            display: flex;
+            align-items: center;
+            justify-content:space-around;
+            font-weight:normal;
+        }
+                
+}
+
+.items{
+    display:flex;
+    flex-direction:column;
+    background:whitesmoke;
+    align-items:center;
+
+    .items__title{
+        align-self:flex-start
+    }
+        .items__btn{
+        border-radius: 20px;
+        margin: 5px;
+        background: white;
+        text-align:start;
+        width:90%;
+        font-size:0.8rem;
+        }
+}
+
+.items__btn p{
+    font-weight:lighter;
+}
+
