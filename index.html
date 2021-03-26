@@ -7,66 +7,71 @@
     <script src="https://kit.fontawesome.com/f811b3604b.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet"> 
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="style.css">
   </head>
-
-  <div class="spinner">
-    <div class="dot dot-1"></div>
-    <div class="dot dot-2"></div>
-    <div class="dot dot-3"></div>
-  </div>
-  
-  <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
-    <defs>
-      <filter id="goo">
-        <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
-        <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 21 -7"/>
-      </filter>
-    </defs>
-  </svg>
-
   <body class="container">
+  <div class="spinner__container"> 
+    <div class="spinner">
+      <div class="dot dot-1"></div>
+      <div class="dot dot-2"></div>
+      <div class="dot dot-3"></div>
+    </div>
+   <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+      <defs>
+        <filter id="goo">
+          <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+          <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 21 -7"/>
+        </filter>
+      </defs>
+    </svg>
+    </div>
+    
       <header class="header ">
+      <a href="index.html">
         <h1 class="logo header__logo">ohmyfood</h1>
+      </a>
       </header>
 
     <main class="container">
       <section class="search">
-          <div class=" form search__form ">
+          <div class="location search__location">
             <i class="fas fa-map-marker-alt form__icon"></i>
-            <input class="form__input" type="search" placeholder="Paris,Belleville"/>
+            <p>Paris, Belleville</p>
           </div>
 
           <div class="search__title">
             <h2>Réservez le menu qui <br>vous convient</h2>
             <p>Découvrez des restaurants d'exception,<br> sélectionnés par nos soins.</p>
           </div>
-
-        <button class="btn search__btn btn--pink">Explorez nos restaurants</button>
+          
+        <button class="btn btn--pink"><a href="#restaurants">Explorez nos restaurants</a></button>
+       
       </section>
 
       <section class="features">
           <h3 class="features__title">Fonctionnement</h3>
           <div class="btn features__btn">
             <span class="btn__number">1</span>
-            <i class="fas fa-mobile-alt"></i>
+            <i class="fas fa-mobile-alt features__fas"></i>
+            
             Choisissez un restaurant
           </div>
 
           <div class="btn features__btn">
             <span class="btn__number" >2</span>
-            <i class="fas fa-list"></i>
+            <i class="fas fa-list features__fas"></i>
             Composez votre menu
           </div>
           <div class="btn features__btn">
             <span class="btn__number">3</span>
-            <i class="fas fa-store"></i>
+            <i class="fas fa-store features__fas"></i>
             Dégustez au restaurant
           </div>
       </section>
 
-      <section class="restos">
+      <section id="restaurants" class="restos">
         <h3 class="restos__title">Restaurants</h3>
         <div class="cards">
           <div class="cards__box">
@@ -79,7 +84,7 @@
                     <h4>la Palette du goût</h4>
                     <p>Menilmontant</p>
                   </div>
-                  <i class="far fa-heart"></i>
+                  <i class="fas fa-heart"></i>
                 </figcaption>
               </figure>
             </a>
@@ -95,7 +100,7 @@
                     <h4>La note enchantée</h4>
                     <p>Charonne</p>
                   </div>
-                  <i class="far fa-heart"></i>
+                  <i class="fas fa-heart"></i>
                 </figcaption>
               </figure>
             </a>
@@ -110,7 +115,7 @@
                     <h4>À La française</h4>
                      <p>Cité Rouge</p>
                   </div>
-                  <i class="far fa-heart"></i>
+                  <i class="fas fa-heart"></i>
                 </figcaption>
               </figure>
             </a>
@@ -125,7 +130,7 @@
                     <h4>Le délice des sens</h4>
                      <p>Folie-Méricourt</p>
                   </div>
-                  <i class="far fa-heart"></i>
+                  <i class="fas fa-heart"></i>
                 </figcaption>
               </figure>
             </a>
