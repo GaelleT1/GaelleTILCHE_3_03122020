@@ -481,7 +481,13 @@ color:white;
         justify-content: space-between;
         height: 4.2rem;
         line-height: 0.2rem;
-        
+        &:hover{
+            .switch--opened{
+            left:0;
+            transform: translateX(100px);
+            
+            }
+        }
             @media(min-width:600px){
                 width: 450px;
                 overflow: hidden;
@@ -547,10 +553,6 @@ color:white;
     
 }
 
-@keyframes slide-left {
-	-webkit-animation: slide-left 1s forwards;
-	        animation: slide-left 1s forwards;
-}
 
 
 @-webkit-keyframes slide-left {
@@ -560,7 +562,7 @@ color:white;
   }
   100% {
     -webkit-transform: translateX(-100px);
-            transform: translateX(100px);
+            transform: translateX(-100px);
   }
 }
 @keyframes slide-left {
@@ -581,12 +583,7 @@ color:white;
     justify-content:center;
     transition: all 2s ease-in;
     position:relative;
-    &:hover{
-        left:0;
-        transition-duration: 2s;
-        transform: translateX(100px);;
-        animation:slide-left 2s;
-    }
+    
     
     .switch__background{
         background:#99E2D0;
