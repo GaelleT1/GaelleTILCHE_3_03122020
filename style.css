@@ -1,3 +1,91 @@
+@-moz-keyframes slide {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.3;
+    transform: scale(2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@-webkit-keyframes slide {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.3;
+    transform: scale(2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@-o-keyframes slide {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.3;
+    transform: scale(2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes slide {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.3;
+    transform: scale(2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes slide {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    left: -9999px;
+  }
+}
+@keyframes progress {}
+@keyframes appear {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+@-webkit-keyframes slide-left {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-100px);
+    transform: translateX(-100px);
+  }
+}
+@keyframes slide-left {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-100px);
+    transform: translateX(-100px);
+  }
+}
 * {
   box-sizing: border-box;
   text-decoration: none;
@@ -58,63 +146,6 @@
   background: #faaacc;
 }
 
-@-moz-keyframes slide {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    opacity: 0.3;
-    transform: scale(2);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-@-webkit-keyframes slide {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    opacity: 0.3;
-    transform: scale(2);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-@-o-keyframes slide {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    opacity: 0.3;
-    transform: scale(2);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-@keyframes slide {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    opacity: 0.3;
-    transform: scale(2);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-@keyframes slide {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    left: -9999px;
-  }
-}
 body {
   max-width: 100%;
   margin: 0;
@@ -144,6 +175,7 @@ a {
   padding: 15px;
   margin-top: 35px;
   font-size: 0.8rem;
+  border: none;
 }
 
 /*-----------page d accueil-----------------------------*/
@@ -324,7 +356,6 @@ a {
   padding-bottom: 5px;
 }
 
-@keyframes progress {}
 .fa-heart {
   text-align: center;
   font-size: 1.5rem;
@@ -413,16 +444,6 @@ a {
   }
 }
 
-@keyframes appear {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0px);
-  }
-}
 .items {
   display: flex;
   flex-direction: column;
@@ -446,8 +467,12 @@ a {
   line-height: 0.2rem;
 }
 .items .items__description:hover .switch--opened {
-  left: 0;
-  transform: translateX(100px);
+  left: 100px;
+  transform: translateX(-100px);
+}
+.items .items__description:hover .switch__icon {
+  transition-duration: 1s;
+  transform: rotate(360deg);
 }
 @media (min-width: 600px) {
   .items .items__description {
@@ -514,56 +539,27 @@ a {
   padding-right: 5px;
 }
 
-@-webkit-keyframes slide-left {
-  0% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-  }
-  100% {
-    -webkit-transform: translateX(-100px);
-    transform: translateX(-100px);
-  }
-}
-@keyframes slide-left {
-  0% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-  }
-  100% {
-    -webkit-transform: translateX(-100px);
-    transform: translateX(-100px);
-  }
-}
-.switch--opened {
+.switch {
   display: flex;
   align-items: center;
   width: 4rem;
   justify-content: center;
-  transition: all 2s ease-in;
+  transition: all 1s ease-out;
   position: relative;
+  right: -100px;
+  transform: translate x;
 }
-.switch--opened .switch__background {
+.switch .switch__background {
   background: #99E2D0;
   border-radius: 0px 15px 15px 0px;
   width: 4rem;
   height: 100%;
   transition-duration: 1s;
 }
-.switch--opened .switch__icon {
+.switch .switch__icon {
   color: white;
   font-size: 1.5rem;
   position: absolute;
-  transition-duration: 1s;
-  transform: rotate(360deg);
-}
-
-.switch--closed {
-  position: absolute;
-  right: -100px;
-  -ms-transform: rotate(180deg);
-  -moz-transform: rotate(180deg);
-  -webkit-transform: rotate(180deg);
-  transform: rotate;
 }
 
 /*# sourceMappingURL=style.css.map */
