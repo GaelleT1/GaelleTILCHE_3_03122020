@@ -46,7 +46,7 @@
   opacity: 0.8;
   align-items: center;
   z-index: 1000;
-  animation: stop 3s 3s ease-out;
+  animation: stop 3s 3s ease-out forwards;
 }
 
 .loader {

@@ -1,0 +1,17 @@
+@mixin btn-pink{
+    color: white;
+    background-image:$color-btn;
+    height: 50px;
+    border-radius: 40px;
+    width: 50%;
+    margin-bottom:30px;
+    text-align: center;
+    padding:15px;
+    margin-top:35px;
+    font-size:0.8rem; 
+    border:none;
+    box-shadow: 5px 14px 24px 15px rgba(163,155,155,0.64);
+    -webkit-box-shadow: 5px 14px 24px 15px rgba(163,155,155,0.64);
+    -moz-box-shadow: 5px 14px 24px 15px rgba(163,155,155,0.64);
+}
+
