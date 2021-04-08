@@ -39,11 +39,11 @@
     display: inline-block;
     position: relative;
 }
-.loader span:nth-child(1){ background:$color-primary; }
-.loader span:nth-child(2){ background: #88c46d; }
-.loader span:nth-child(3){ background: $color-secundary; }
-.loader span:nth-child(4){ background: #f1e96b; }
-.loader span:nth-child(5){ background: $color-tertiary; }
+.loader span:nth-child(1){ background:$purple; }
+.loader span:nth-child(2){ background: $mint; }
+.loader span:nth-child(3){ background: $pink; }
+.loader span:nth-child(4){ background: $light-yellow; }
+.loader span:nth-child(5){ background: $aquamarine; }
 .loader span:before{
     content: "";
     background: inherit;
@@ -112,13 +112,13 @@ a{
 }
 
 .btn--pink a{
-    color:white;
+    color:#ffffff;
 }
 
 /*-----------page d accueil-----------------------------*/
 
 .header{
-    background:white;
+    background:$white;
    padding-bottom:20px;
 
     .header__logo{
@@ -136,13 +136,13 @@ a{
     font-size:1.1rem;
     font-weight:lighter;
     font-family:"roboto";
-    border-bottom: solid 3px $color-tertiary;
+    border-bottom: solid 3px $mint;
 
 }
 
 
 .search{
-    background-color:whitesmoke;
+    background-color:$whitesmoke;
     display: flex;
     flex-direction: column;
     align-items: center;  
@@ -184,7 +184,7 @@ a{
       
 
 .features{
-background:white;
+background:$white;
 padding:30px 0px;
 display: flex;
 flex-direction: column;
@@ -192,16 +192,16 @@ align-items: center;
 
     .features__btn{
     height: 70px;
-    box-shadow: 3px 5px 3px 4px lightgrey;
+    box-shadow: 3px 5px 3px 4px $lightgrey;
     border-radius: 20px;
     width: 80%;
     margin-top: 10px;
     margin-bottom: 10px;
     display: flex;
     align-items: center;
-    background-color: whitesmoke;
+    background-color: $whitesmoke;
         &:hover{
-            background-color:lavender;
+            background-color:$lavender;
         }
         @media(min-width:600px){
             margin:1rem auto;
@@ -229,16 +229,16 @@ align-items: center;
 .btn__number{
 
 border-radius: 50%;
-background:$color-primary;
+background:$purple;
 padding: 5px 7px 5px 7px;
 margin-left: -13px;
-color:white;
+color:$white;
 }
 
 
 
 .restos {
-    background: whitesmoke;
+    background:$whitesmoke;
     padding:30px 0px;
     .restos__title{
         padding-left: 20px;
@@ -273,7 +273,7 @@ color:white;
     border-radius:20px;
     display:flex;
     flex-direction: column;
-    box-shadow:1px 1px 2px 2px lightgrey;
+    box-shadow:1px 1px 2px 2px $lightgrey;
     @media(min-width:600px){
         height:95%;
     }
@@ -287,8 +287,8 @@ color:white;
 
         .new{
             position:absolute;
-            color:green;
-            background: aquamarine;
+            color:$green;
+            background:$aquamarine;
             height:30px;
             width:80px;
             font-size:1rem;
@@ -301,7 +301,7 @@ color:white;
 
 
 .caption{
-    background: white;
+    background: $white;
     border-radius:0px 0px 20px 20px;
     display:flex;
 
@@ -327,14 +327,14 @@ color:white;
     display: inline-block;
     background-clip: text;
     background-size:cover;
-    -webkit-text-stroke: 1px black;
-    background-image: white;
+    -webkit-text-stroke: 1px $black;
+    background-image: $white;
     align-self:center;
     &:hover{
-       -webkit-text-stroke: white;
+       -webkit-text-stroke: $white;
         background-image:linear-gradient(to top,#9356dc, #ee5fca, #FF79DA);
     }
-    &:active{
+    &:visited{
        color:linear-gradient(to top,#9356dc, #ee5fca, #FF79DA);
     }
 }
@@ -346,7 +346,7 @@ color:white;
 .footer{
     background:#353535;
     line-height: 2rem;
-    color:white;
+    color:$white;
     
      .footer__logo{
         
@@ -362,7 +362,7 @@ color:white;
     }
 
     .footer--link{
-        color:white;
+        color:$white;
     }
     
 }     
@@ -401,7 +401,7 @@ color:white;
             margin-top: -3.5rem;
             padding-top: 0.8rem;
             position: relative;
-            background: whitesmoke;
+            background: $whitesmoke;
             border-radius: 40px 40px 0px 0px;
             
         }
@@ -422,7 +422,7 @@ color:white;
 .items{
     display:flex;
     flex-direction:column;
-    background:whitesmoke;
+    background:$whitesmoke;
     align-items:center;
     
     
@@ -474,7 +474,7 @@ color:white;
 .items__description{
         border-radius: 15px;
         margin: 15px;
-        background: white;
+        background:$white;
         width:90%;
         display: flex;
         justify-content: space-between;
@@ -483,11 +483,12 @@ color:white;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
-        
+        transition:1s ease;
     &:hover{
         .switch--opened{
             left: 100px;
             transform:translateX(-100px);
+            display:flex;
         }
         .switch__icon{
             transition-duration:1s;
@@ -498,37 +499,31 @@ color:white;
     
 }
 
-     
-      
-
-
-
 .items__title{
     align-self:flex-start
 }
 
 .items__description p{
     font-weight:lighter;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    
 }
 
 
 .description__content{
     padding-left:1rem;
     flex-basis: 90%;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    display:flex;
+    flex-direction: column;
+    .bold{
+        font-weight:700;
+    }
+   
 }
 
 .description__price{
     align-self: center;
     padding-right:5px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    
 }
 
 
@@ -538,13 +533,14 @@ color:white;
     width: 4rem;
     justify-content:center;
     transition: all 1s ease-out;
-    position:relative;
+    display:none;
     right:-100px;
     transform:translateX();
+    
 
      
     .switch__background{
-        background:#99E2D0;
+        background:$mint;
         border-radius: 0px 15px 15px 0px;
         width:4rem;  
         height:100%;
@@ -552,7 +548,7 @@ color:white;
     }
     
     .switch__icon{
-        color:white;
+        color:$white;
         font-size: 1.5rem;
         position:absolute;
        
