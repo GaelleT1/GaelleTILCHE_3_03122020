@@ -279,24 +279,28 @@ a {
   background: whitesmoke;
   padding: 30px 0px;
 }
-.restos .cards {
+.restos .restos__title {
+  padding-left: 20px;
+}
+
+.cards {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   height: 100%;
 }
 @media (min-width: 600px) {
-  .restos .cards {
+  .cards {
     flex-direction: row;
     flex-wrap: wrap;
   }
 }
-.restos .cards__box {
+.cards .cards__box {
   height: 300px;
   width: 100%;
 }
 @media (min-width: 600px) {
-  .restos .cards__box {
+  .cards .cards__box {
     flex-basis: 50%;
   }
 }
@@ -328,6 +332,7 @@ a {
   font-size: 1rem;
   text-align: center;
   padding-top: 4px;
+  float: right;
 }
 
 .caption {
@@ -508,6 +513,9 @@ a {
 
 .items__description p {
   font-weight: lighter;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .description__content {
@@ -521,6 +529,9 @@ a {
 .description__price {
   align-self: center;
   padding-right: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .switch--opened {
@@ -531,7 +542,7 @@ a {
   transition: all 1s ease-out;
   position: relative;
   right: -100px;
-  transform: translate x;
+  transform: translateX();
 }
 .switch--opened .switch__background {
   background: #99E2D0;
