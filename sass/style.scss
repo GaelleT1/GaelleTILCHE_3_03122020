@@ -1,8 +1,12 @@
 @import "./utils/variables";
 @import "./utils/keyframes";
+@import "./utils/mixins";
+@import "./layout/loader";
 @import"./layout/header";
 @import "./layout/footer";
-@import"./component/bouton";
+@import "./component/bouton";
+
+
 
 *{
     box-sizing: border-box;
@@ -41,15 +45,12 @@ a{
 
 .search{
     background-color:$whitesmoke;
-    display: flex;
-    flex-direction: column;
-    align-items: center;  
+    @include flexAlign();
     
     .search__title{
-        display: flex;
-        flex-direction: column;
-        text-align: center;
+        @include flexAlign();
         padding-top:1rem;  
+        text-align:center;
     }
 }
 
@@ -84,9 +85,7 @@ a{
 .features{
 background:$white;
 padding:30px 0px;
-display: flex;
-flex-direction: column;
-align-items: center;
+@include flexAlign();
 
     .features__btn{
     height: 70px;
@@ -112,6 +111,7 @@ align-items: center;
 
 .features__title {
     align-self: flex-start;
+    padding-left: 20px;
 }
 
 
@@ -148,7 +148,7 @@ color:$white;
     display:flex;
     flex-direction:column;
     justify-content:space-around;
-    height:100%;
+    
     @media(min-width:600px){
         flex-direction:row;
         flex-wrap:wrap;
@@ -173,7 +173,7 @@ color:$white;
     flex-direction: column;
     box-shadow:1px 1px 2px 2px $lightgrey;
     @media(min-width:600px){
-        height:95%;
+       
     }
         
     .figure__img{
@@ -192,7 +192,8 @@ color:$white;
             font-size:1rem;
             text-align: center;
             padding-top: 4px;
-            float:right;
+            margin-left:200px;
+            margin-top:10px;
         }
         
 }
@@ -218,7 +219,7 @@ color:$white;
 
 .fa-heart{
     text-align:center;
-    font-size:2rem;
+    font-size:1.5rem;
     font-weight:900;
     color:transparent;
     overflow:hidden;
@@ -228,6 +229,7 @@ color:$white;
     -webkit-text-stroke: 1px $black;
     background-image: $white;
     align-self:center;
+    padding-right:10px;
     &:hover{
        -webkit-text-stroke: $white;
         background-image:linear-gradient(to top,#9356dc, #ee5fca, #FF79DA);
@@ -282,10 +284,9 @@ color:$white;
 
 
 .items{
-    display:flex;
-    flex-direction:column;
+    @include flexAlign();
     background:$whitesmoke;
-    align-items:center;
+    
     
     
 

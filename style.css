@@ -30,6 +30,97 @@
     transform: none;
   }
 }
+.loader__container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  background: whitesmoke;
+  opacity: 0.8;
+  align-items: center;
+  z-index: 1000;
+  animation: stop 3s 3s ease forwards;
+}
+@media (max-width: 600px) {
+  .loader__container {
+    display: none;
+  }
+}
+
+.loader {
+  width: 230px;
+  height: 35px;
+  position: relative;
+  margin: 50px auto 0;
+  z-index: 1001;
+}
+
+.loader span {
+  width: 32px;
+  height: 32px;
+  margin: 0 5px;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+}
+
+.loader span:nth-child(1) {
+  background: #9356dc;
+}
+
+.loader span:nth-child(2) {
+  background: #99E2D0;
+}
+
+.loader span:nth-child(3) {
+  background: #FF79DA;
+}
+
+.loader span:nth-child(4) {
+  background: #f1e96b;
+}
+
+.loader span:nth-child(5) {
+  background: #7fffd4;
+}
+
+.loader span:before {
+  content: "";
+  background: inherit;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+  animation: wave 2s ease-out infinite;
+}
+
+.loader span:nth-child(1):before {
+  animation-delay: 0.2s;
+}
+
+.loader span:nth-child(2):before {
+  animation-delay: 0.4s;
+}
+
+.loader span:nth-child(3):before {
+  animation-delay: 0.6s;
+}
+
+.loader span:nth-child(4):before {
+  animation-delay: 0.8s;
+}
+
+.loader span:nth-child(5):before {
+  animation-delay: 1s;
+}
+
+.loader--hidden {
+  opacity: 0;
+  transition: all 0.3s forwards;
+}
+
 .header {
   background: #ffffff;
   padding-bottom: 20px;
@@ -145,8 +236,9 @@ a {
 .search .search__title {
   display: flex;
   flex-direction: column;
-  text-align: center;
+  align-items: center;
   padding-top: 1rem;
+  text-align: center;
 }
 
 .search h2 {
@@ -202,6 +294,7 @@ a {
 
 .features__title {
   align-self: flex-start;
+  padding-left: 20px;
 }
 
 .features__fas {
@@ -235,7 +328,6 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  height: 100%;
 }
 @media (min-width: 600px) {
   .cards {
@@ -260,11 +352,6 @@ a {
   flex-direction: column;
   box-shadow: 1px 1px 2px 2px #d3d3d3;
 }
-@media (min-width: 600px) {
-  .figure {
-    height: 95%;
-  }
-}
 .figure .figure__img {
   height: 80%;
   width: 100%;
@@ -280,7 +367,8 @@ a {
   font-size: 1rem;
   text-align: center;
   padding-top: 4px;
-  float: right;
+  margin-left: 200px;
+  margin-top: 10px;
 }
 
 .caption {
@@ -299,7 +387,7 @@ a {
 
 .fa-heart {
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 900;
   color: transparent;
   overflow: hidden;
@@ -309,6 +397,7 @@ a {
   -webkit-text-stroke: 1px #000000;
   background-image: #ffffff;
   align-self: center;
+  padding-right: 10px;
 }
 .fa-heart:hover {
   -webkit-text-stroke: #ffffff;
@@ -357,8 +446,8 @@ a {
 .items {
   display: flex;
   flex-direction: column;
-  background: #f5f5f5;
   align-items: center;
+  background: #f5f5f5;
 }
 @media (min-width: 700px) {
   .items .items__description {
