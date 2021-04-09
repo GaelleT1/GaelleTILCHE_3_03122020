@@ -99,6 +99,7 @@ padding:30px 0px;
     background-color: $whitesmoke;
         &:hover{
             background-color:$lavender;
+            .fas{ color:$purple;}
         }
         @media(min-width:600px){
             margin:1rem auto;

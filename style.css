@@ -285,6 +285,9 @@ a {
 .features .features__btn:hover {
   background-color: #e6e6fa;
 }
+.features .features__btn:hover .fas {
+  color: #9356dc;
+}
 @media (min-width: 600px) {
   .features .features__btn {
     margin: 1rem auto;
