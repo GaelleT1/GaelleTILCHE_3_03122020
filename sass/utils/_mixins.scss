@@ -3,3 +3,12 @@
     flex-direction: column;
     align-items: center;  
 }
+@mixin Shadow{
+    box-shadow:3px 5px 3px 4px #d3d3d3;
+    -webkit-box-shadow:3px 5px 3px 4px #d3d3d3;
+   -moz-box-shadow:3px 5px 3px 4px #d3d3d3;
+}
+
+@mixin Gradient{
+    
+}
