@@ -2,12 +2,12 @@
     height:100%;
     width:100%;
     display:flex;
-    justify-content:center;
     position:fixed;
+    padding-top: 200px;
     top:0;
-    background: whitesmoke;
-    opacity: 0.8;
-    align-items: center;
+    bottom:50;
+    background:whitesmoke;
+    opacity: 1;
     z-index:1000;
     animation:stop 3s 3s ease forwards;
     @media(max-width:800px){
@@ -21,8 +21,7 @@
     height: 35px;
     position: relative;
     margin: 50px auto 0;
-    z-index:1001;
-    
+    z-index:1001;    
 }
 
 .loader span{
@@ -53,7 +52,3 @@
 .loader span:nth-child(4):before{ animation-delay: 0.8s; }
 .loader span:nth-child(5):before{ animation-delay: 1s; }
 
-.loader--hidden{
-    opacity:0;
-    transition: all 0.3s forwards;
-} 

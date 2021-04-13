@@ -6,17 +6,18 @@
 @mixin Shadow{
     box-shadow:3px 5px 3px 4px #d3d3d3;
     -webkit-box-shadow:3px 5px 3px 4px #d3d3d3;
-   -moz-box-shadow:3px 5px 3px 4px #d3d3d3;
+    -moz-box-shadow:3px 5px 3px 4px #d3d3d3;
+   
 }
 
 @mixin items{
     border-radius: 15px;
-        margin: 15px;
-        background:$white;
-        display: flex;
+    margin: 15px;
+    background:$white;
+    display: flex;
         justify-content: space-between;
         height: 4.2rem;
-        line-height: 0.2rem;
+        
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
