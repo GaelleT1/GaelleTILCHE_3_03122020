@@ -133,19 +133,26 @@ a{
         border-radius:20px 20px 0px 0px;
     }
 
+    
+}
+
+.box--new{
+    width:100%;
+    height:100%;
+    display:flex;
+    
+
     .new{
-            position:absolute;
-            color:$green;
-            background:$aquamarine;
-            height:30px;
-            width:80px;
-            font-size:1rem;
-            text-align: center;
-            padding-top: 4px;
-            margin-left:25rem;
-            margin-top:10px;
+    position:absolute;
+    color:$green;
+    background:$aquamarine;
+    height:30px;
+    width:80px;
+    font-size:1rem;
+    text-align: center;
+    padding-top: 4px;
+    
     }
-        
 }
 
 
