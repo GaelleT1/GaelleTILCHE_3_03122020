@@ -5,8 +5,9 @@
 
 @keyframes stop{
   0%{opacity:1;}
-  99%{transform: translateY(-500px);}
-  100%{opacity:0;}
+  90%{transform: translateY(-500);}
+  99%{opacity:0;}
+  100%{visibility:hidden;}
  
 }
 

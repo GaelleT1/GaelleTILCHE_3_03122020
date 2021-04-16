@@ -2,7 +2,7 @@
 @import "./utils/keyframes";
 @import "./utils/mixins";
 @import "./layout/loader";
-@import"./layout/header";
+@import "./layout/header";
 @import "./layout/footer";
 @import "./layout/features";
 @import "./component/bouton";
@@ -38,13 +38,7 @@ a{
     font-weight:normal;
 }
 
-.items h3{
-    margin-left: 1rem;
-    font-size:1.1rem;
-    font-weight:lighter;
-    font-family:"roboto";
-    border-bottom: solid 3px $mint;
-}
+
 
 
 .search{
@@ -85,6 +79,15 @@ a{
     font-weight:bold;
 }
 
+
+.features__button:hover{
+    background-color:$lavender;
+    .fas{ 
+        color:$purple;
+    }
+    
+}
+
 .restos {
     background:$whitesmoke;
     padding:15px 0px;
@@ -117,13 +120,13 @@ a{
     
 
 .figure{
-   
+   height: 80%;
     border-radius:20px;
     display:flex;
     flex-direction: column;
     @include Shadow;
     @media(min-width:600px){
-       height:85%;
+       height:90%;
     }
         
     .figure__img{
@@ -211,90 +214,22 @@ a{
     }
 }
 
-
-
-
 .items{
     @include flexAlign();
     background:$whitesmoke;
-    
-
-.items__description{
-       
-    @media(min-width:700px){
-        animation:appear 1s ease-in  forwards;
-        opacity:0;
-        width:40%;
-        &:nth-child(2){
-            animation-delay: 1.5s ;  
-        }
-    
-        &:nth-child(3){
-            animation-delay: 2s ;
-        }
-        &:nth-child(4){
-            animation-delay: 2.5s;
-        }
-        &:nth-child(5){
-            animation-delay: 3s ;
-        }
-        &:nth-child(7){
-         animation-delay: 3.5s ;
-        }
-        &:nth-child(8){
-            animation-delay: 4s;   
-        }
-        &:nth-child(9){
-            animation-delay: 4.5s ;
-        }
-        & :nth-child(11){
-            animation-delay: 5s ;
-        }
-        &:nth-child(12){
-            animation-delay: 5.5s ;
-        }
-    
-        & :nth-child(13){
-            animation-delay: 6s;
-        }
-    }
 }
-    
-        
-.items__description{
-        border-radius: 15px;
-        margin: 15px;
-        background:$white;
-        display: flex;
-        justify-content: space-between;
-        height: 4.5rem;
-        width:90%;
-        
-    &:hover{
-        .switch--opened{
-            transform:translateX();
-            display: flex;
-        }
-        .switch__icon{
-            transform:rotate(360deg);
-        }
-        
-    }
-    
+  
+.items h3{
+    margin-left: 1rem;
+    font-size:1.1rem;
+    font-weight:lighter;
+    font-family:"roboto";
+    border-bottom: solid 3px $mint;
 }
 
 .items__title{
     align-self:flex-start
 }
-
-.items__description p{
-    font-weight:lighter;
-    margin:0;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
 
 .description__content{
     padding:0.5rem;
@@ -315,13 +250,81 @@ a{
    
 }
 
+.items__description{
+    @include Shadow;
+    border-radius: 15px;
+    margin: 15px;
+    background:$white;
+    display: flex;
+    justify-content: space-between;
+    height: 4.5rem;
+    width:80%;
+    
+    &:hover{
+        .switch--opened{
+            transform:translateX();
+            display: flex;
+        }
+        .switch__icon{
+            transform:rotate(360deg);
+        }
+    
+    }
+}
+
+
+.items__description p{
+    font-weight:lighter;
+    margin:0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
 .description__price{
     align-self: center;
     padding-right:5px;
     
 }
 
-
+.items__description{
+    animation:appear 1s ease-in  forwards;
+    opacity:0;
+    width:40%;
+    &:nth-child(2){
+        animation-delay: 1.5s ;  
+    }
+    &:nth-child(3){
+        animation-delay: 2s ;
+    }
+    &:nth-child(4){
+        animation-delay: 2.5s;
+    }
+    &:nth-child(5){
+        animation-delay: 3s ;
+    }
+    &:nth-child(7){
+        animation-delay: 3.5s ;
+    }
+    &:nth-child(8){
+        animation-delay: 4s;   
+    }
+    &:nth-child(9){
+        animation-delay: 4.5s ;
+    }
+    & :nth-child(11){
+        animation-delay: 5s ;
+    }
+    &:nth-child(12){
+        animation-delay: 5.5s ;
+    }
+    & :nth-child(13){
+        animation-delay: 6s;
+    }
+    
+}
+    
+       
 .switch--opened{
     display: flex;
     align-items: center;
@@ -356,4 +359,3 @@ a{
 
 
 
-}

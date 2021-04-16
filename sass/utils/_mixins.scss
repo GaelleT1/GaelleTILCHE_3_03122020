@@ -3,6 +3,7 @@
     flex-direction: column;
     align-items: center;  
 }
+
 @mixin Shadow{
     box-shadow:3px 5px 3px 4px #d3d3d3;
     -webkit-box-shadow:3px 5px 3px 4px #d3d3d3;
@@ -10,56 +11,15 @@
    
 }
 
-@mixin items{
+@mixin items-Layout{
     border-radius: 15px;
     margin: 15px;
     background:$white;
     display: flex;
-        justify-content: space-between;
-        height: 4.2rem;
-        
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        
+    justify-content: space-between;
+    height: 4.2rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
-@mixin itemsAnimate{
-    .items__description{
-        animation:appear 1s ease-in  forwards;
-        opacity:0;
-        width:40%;
-        &:nth-child(2){
-            animation-delay: 1.5s ;  
-        }
-    
-        &:nth-child(3){
-            animation-delay: 2s ;
-        }
-        &:nth-child(4){
-            animation-delay: 2.5s;
-        }
-        &:nth-child(5){
-            animation-delay: 3s ;
-        }
-        &:nth-child(7){
-            animation-delay: 3.5s ;
-        }
-        &:nth-child(8){
-            animation-delay: 4s;   
-        }
-        &:nth-child(9){
-            animation-delay: 4.5s ;
-        }
-        & :nth-child(11){
-            animation-delay: 5s ;
-        }
-        &:nth-child(12){
-            animation-delay: 5.5s ;
-        }
-    
-        & :nth-child(13){
-            animation-delay: 6s;
-        }
-    }
-}

@@ -3,17 +3,14 @@
     width:100%;
     display:flex;
     position:fixed;
-    padding-top: 200px;
+    justify-content: center;
+    padding-top:200px;
     top:0;
     bottom:50;
     background:whitesmoke;
     opacity: 1;
     z-index:1000;
-    animation:stop 3s 3s ease forwards;
-    @media(max-width:800px){
-        display:none;
-    }
-          
+    animation:stop 3s 3s ease forwards;          
 }
       
 .loader{
