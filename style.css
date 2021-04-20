@@ -37,6 +37,7 @@
 }
 @keyframes appear {
   from {
+    visibility: hidden;
     opacity: 0;
     -webkit-transform: translate3d(0, 100%, 0);
     transform: translate3d(0, 100%, 0);
@@ -45,6 +46,23 @@
     opacity: 1;
     -webkit-transform: none;
     transform: none;
+  }
+}
+@keyframes progressive {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 0.6;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1.5;
   }
 }
 .loader__container {
@@ -276,6 +294,7 @@
 .fa-heart:hover {
   -webkit-text-stroke: #ffffff;
   background-image: linear-gradient(to top, #9356dc, #ee5fca, #FF79DA);
+  animation: progressive ease-in-out 1s;
 }
 .fa-heart:active {
   background-image: visible;
@@ -522,13 +541,11 @@ a {
   width: 80%;
 }
 .items__description:hover .switch--opened {
-  transform: translateX(left, 200px);
   display: flex;
-  justify-content: center;
-  align-items: center;
+  animation: switch 1s ease;
 }
 .items__description:hover .switch__icon {
-  transform: rotate(380deg);
+  animation: rotate 0.5s ease;
   display: flex;
 }
 
@@ -547,15 +564,8 @@ a {
 }
 
 .items__description {
-  animation: appear ease-in;
+  animation: appear 4s ease forwards;
   width: 40%;
-}
-.items__description:hover .switch--opened {
-  display: flex;
-  animation: switch 2s ease;
-}
-.items__description:hover .switch__icon {
-  animation: rotate 1s ease;
 }
 .items__description:nth-child(2) {
   animation-delay: 0.5s;

@@ -20,18 +20,30 @@
 }
 
 @keyframes appear{
-
+ 
   from { 
-    opacity: 0;
-    -webkit-transform: translate3d(0, 100%, 0);
-    transform: translate3d(0, 100%, 0);
+    visibility: hidden;
+    opacity:0;
+    -webkit-transform: translate3d(0,100%,0);
+    transform: translate3d(0,100%,0);
   }
 
   to {
+    
     opacity: 1;
     -webkit-transform: none;
     transform: none;
   }
+}
+
+@keyframes progressive{
+  
+  0%{ opacity: 0;}
+  30%{ opacity: 0.3;}
+  50%{ opacity: 0.6;}
+  70% { opacity: 1;}
+  100%{ opacity:1.5;}
+  
 }
 
 
