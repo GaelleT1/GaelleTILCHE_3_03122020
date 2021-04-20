@@ -262,11 +262,15 @@ a{
     
     &:hover{
         .switch--opened{
-            transform:translateX();
+            transform:translateX(left,200px);
             display: flex;
+            justify-content: center;
+           align-items:center;
         }
+
         .switch__icon{
-            transform:rotate(360deg);
+            transform:rotate(380deg);
+            display:flex;
         }
     
     }
@@ -284,54 +288,69 @@ a{
 .description__price{
     align-self: center;
     padding-right:5px;
-    
+    margin:1rem;
 }
 
 .items__description{
-    animation:appear 1s ease-in  forwards;
-    opacity:0;
+    animation:appear  ease-in  ;
     width:40%;
-    &:nth-child(2){
-        animation-delay: 1.5s ;  
+    
+    &:hover{
+        .switch--opened{
+         display:flex;
+            animation:switch 2s ease;
+            
+        }   
+        .switch__icon{
+                animation:rotate 1s ease;
+        }
+    } 
+
+    &:nth-child(2) {
+        animation-delay: 0.5s;
     }
-    &:nth-child(3){
-        animation-delay: 2s ;
+        
+    &:nth-child(3){animation-delay: 1s;
     }
+        
     &:nth-child(4){
+        animation-delay: 1.5s;
+    }
+
+    &:nth-child(6) {
+            animation-delay: 2s;
+    }
+        
+    &:nth-child(7) {
         animation-delay: 2.5s;
     }
-    &:nth-child(5){
-        animation-delay: 3s ;
+        
+    &:nth-child(8) {
+        animation-delay: 3s;
     }
-    &:nth-child(7){
-        animation-delay: 3.5s ;
+
+    &:nth-child(10) {
+        animation-delay: 3.5s;
     }
-    &:nth-child(8){
-        animation-delay: 4s;   
+            
+    &:nth-child(11) {
+        animation-delay: 4s;
     }
-    &:nth-child(9){
-        animation-delay: 4.5s ;
+
+    &:nth-child(12) {
+        animation-delay: 4.5s;
     }
-    & :nth-child(11){
-        animation-delay: 5s ;
-    }
-    &:nth-child(12){
-        animation-delay: 5.5s ;
-    }
-    & :nth-child(13){
-        animation-delay: 6s;
-    }
-    
-}
+}      
+        
+       
     
        
 .switch--opened{
-    display: flex;
+   display:none;
     align-items: center;
-    width: 4rem;
     justify-content:center;
     transition: all 2s ease-out;
-    display:none;
+    width:0;
     
       
     .switch__background{
@@ -339,15 +358,15 @@ a{
         border-radius: 0px 15px 15px 0px;
         width:4rem;  
         height:100%;
-        transition-duration:1s;
+        
     }
     
     .switch__icon{
         color:$white;
         font-size: 1.5rem;
         position:absolute;
-        transition-duration:1.5s ease-in-out;
-       
+        transition-duration: 1s, ease;
+        display:none;
     }
 }
 
