@@ -1,6 +1,6 @@
 .btn--pink{
     color: white;
-    background-image:$color-btn;
+    background-image:linear-gradient(rgb(147, 86, 220), rgb(238, 95, 202), rgb(255, 121, 218));
     height: 50px;
     width:200px;
     border-radius: 40px;
@@ -12,8 +12,8 @@
     border:none;
     @include Shadow;
     &:hover{
-        background: lighten ($color-btn,50%);
-         
+        background-image:linear-gradient(rgb(160, 161, 235), rgb(248, 95, 202),rgb(265, 121, 218));
+        box-shadow: 3px 5px 3px 4px#aaa6a6;
     }
 
     @media(min-width:600px){

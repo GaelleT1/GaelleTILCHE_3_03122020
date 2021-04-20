@@ -10,19 +10,17 @@
 }
 
 @keyframes switch{
-  0%{ width:0;}
+  0%{ width:0; margin-right:0;}
   100%{width:5rem;}
 }
 
 @keyframes rotate{
-  0%{ transform:rotate(0deg);}
+  0% {transform:rotate(0deg);}
   100%{ transform:rotate(380deg);}
 }
 
 @keyframes appear{
- 
   from { 
-    visibility: hidden;
     opacity:0;
     -webkit-transform: translate3d(0,100%,0);
     transform: translate3d(0,100%,0);

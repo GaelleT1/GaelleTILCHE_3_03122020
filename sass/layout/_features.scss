@@ -9,11 +9,14 @@
 .features__title {
     align-self: flex-start;
     padding-left: 20px;
+    @media(min-width:700px){
+        font-size:1.5rem;
+    }
 }
     
     
 .features__fas{
-    margin-right:2rem;
+    margin-right:3rem;
     margin-left:3rem;
     @media(min-width:600px){
         margin-right:6rem;
@@ -37,11 +40,11 @@
         background-color:$lavender;
         .fas{ 
             color:$purple;
+
         }
     }
-    @media(min-width:600px){
-        
-        width:40%;
+    @media(min-width:700px){
+        width:45%;
     }
 }
 

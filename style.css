@@ -22,6 +22,7 @@
 @keyframes switch {
   0% {
     width: 0;
+    margin-right: 0;
   }
   100% {
     width: 5rem;
@@ -37,7 +38,6 @@
 }
 @keyframes appear {
   from {
-    visibility: hidden;
     opacity: 0;
     -webkit-transform: translate3d(0, 100%, 0);
     transform: translate3d(0, 100%, 0);
@@ -204,9 +204,14 @@
   align-self: flex-start;
   padding-left: 20px;
 }
+@media (min-width: 700px) {
+  .features__title {
+    font-size: 1.5rem;
+  }
+}
 
 .features__fas {
-  margin-right: 2rem;
+  margin-right: 3rem;
   margin-left: 3rem;
 }
 @media (min-width: 600px) {
@@ -235,9 +240,9 @@
 .features__btn:hover .fas {
   color: #9356dc;
 }
-@media (min-width: 600px) {
+@media (min-width: 700px) {
   .features__btn {
-    width: 40%;
+    width: 45%;
   }
 }
 
@@ -251,7 +256,7 @@
 
 .btn--pink {
   color: white;
-  background-image: linear-gradient(to top, #9356dc, #ee5fca, #FF79DA);
+  background-image: linear-gradient(#9356dc, #ee5fca, #ff79da);
   height: 50px;
   width: 200px;
   border-radius: 40px;
@@ -266,7 +271,8 @@
   -moz-box-shadow: 3px 5px 3px 4px #d3d3d3;
 }
 .btn--pink:hover {
-  background: lighten linear-gradient(to top, #9356dc, #ee5fca, #FF79DA), 50%;
+  background-image: linear-gradient(#a0a1eb, #f85fca, #ff79da);
+  box-shadow: 3px 5px 3px 4px #aaa6a6;
 }
 @media (min-width: 600px) {
   .btn--pink {
@@ -334,6 +340,11 @@ a {
   font-family: "shrikhand";
   font-weight: normal;
 }
+@media (min-width: 700px) {
+  .logo {
+    font-size: 2.3rem;
+  }
+}
 
 .search {
   background-color: #f5f5f5;
@@ -386,13 +397,18 @@ a {
 .restos .restos__title {
   padding-left: 20px;
 }
+@media (min-width: 700px) {
+  .restos .restos__title {
+    font-size: 1.5rem;
+  }
+}
 
 .cards {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-@media (min-width: 600px) {
+@media (min-width: 700px) {
   .cards {
     flex-direction: row;
     flex-wrap: wrap;
@@ -402,7 +418,7 @@ a {
   height: 350px;
   width: 100%;
 }
-@media (min-width: 600px) {
+@media (min-width: 700px) {
   .cards .cards__box {
     flex-basis: 50%;
   }
@@ -417,16 +433,16 @@ a {
   -webkit-box-shadow: 3px 5px 3px 4px #d3d3d3;
   -moz-box-shadow: 3px 5px 3px 4px #d3d3d3;
 }
-@media (min-width: 600px) {
-  .figure {
-    height: 90%;
-  }
-}
 .figure .figure__img {
   height: 80%;
   width: 100%;
   object-fit: cover;
   border-radius: 20px 20px 0px 0px;
+}
+@media (min-width: 700px) {
+  .figure .figure__img {
+    height: 70%;
+  }
 }
 
 .box--new {
@@ -542,11 +558,10 @@ a {
 }
 .items__description:hover .switch--opened {
   display: flex;
-  animation: switch 1s ease;
+  animation: switch 1s ease alternate;
 }
 .items__description:hover .switch__icon {
-  animation: rotate 0.5s ease;
-  display: flex;
+  animation: rotate 0.5s ease-in-out;
 }
 
 .items__description p {
@@ -599,7 +614,7 @@ a {
   display: none;
   align-items: center;
   justify-content: center;
-  transition: all 2s ease-out;
+  transition: all 2s ease-in-out;
   width: 0;
 }
 .switch--opened .switch__background {
@@ -612,8 +627,7 @@ a {
   color: #ffffff;
   font-size: 1.5rem;
   position: absolute;
-  transition-duration: 1s, ease;
-  display: none;
+  transition-duration: 1.5s ease-in-out;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -17,7 +17,7 @@
     &:hover{
        -webkit-text-stroke: $white;
         background-image:linear-gradient(to top,#9356dc, #ee5fca, #FF79DA);
-        animation: progressive ease-in-out 1s;
+        animation: progressive ease-in-out 1s ;
     }
 
     &:active{
