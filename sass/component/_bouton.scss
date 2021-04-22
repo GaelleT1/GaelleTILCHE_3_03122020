@@ -6,16 +6,16 @@
     border-radius: 40px;
     margin-bottom:30px;
     text-align: center;
-    padding:15px;
+    padding:18px;
     margin-top:35px;
     font-size:0.8rem; 
     border:none;
     @include Shadow;
-    &:hover{
+    &:hover,&:focus {
         background-image:linear-gradient(rgb(160, 161, 235), rgb(248, 95, 202),rgb(265, 121, 218));
         box-shadow: 3px 5px 3px 4px#aaa6a6;
     }
-
+    
     @media(min-width:600px){
         width:300px;
     }
