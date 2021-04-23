@@ -172,6 +172,12 @@
 .header2__arrow {
   font-size: 1.5rem;
 }
+@media (min-width: 700px) {
+  .header2__arrow {
+    padding-left: 20px;
+    padding-right: 200px;
+  }
+}
 
 .footer {
   background: #353535;
@@ -313,7 +319,7 @@
   -moz-text-stroke: 1.2px #000000;
   background-image: hidden;
   align-self: center;
-  padding-right: 10px;
+  padding: 10px;
 }
 .fa-heart:hover {
   -webkit-text-stroke: #ffffff;
@@ -451,6 +457,12 @@ a {
   -webkit-box-shadow: 3px 5px 3px 4px #d3d3d3;
   -moz-box-shadow: 3px 5px 3px 4px #d3d3d3;
 }
+@media (min-width: 1000px) {
+  .figure {
+    width: 90%;
+    height: 95%;
+  }
+}
 .figure .figure__img {
   height: 80%;
   width: 100%;
@@ -523,6 +535,7 @@ a {
 @media (min-width: 600px) {
   .menu__title-1 {
     font-size: 2rem;
+    padding-left: 2rem;
   }
 }
 
@@ -584,6 +597,11 @@ a {
 @media (min-width: 700px) {
   .items__description {
     width: 50%;
+  }
+}
+@media (min-width: 1000px) {
+  .items__description {
+    width: 40%;
   }
 }
 

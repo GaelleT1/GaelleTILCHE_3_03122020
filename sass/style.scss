@@ -129,8 +129,9 @@ a{
     display:flex;
     flex-direction: column;
     @include Shadow;
-    @media(min-width:600px){
-       
+    @media(min-width:1000px){
+       width:90%;
+       height:95%;
     }
         
     .figure__img{
@@ -216,6 +217,7 @@ a{
     font-size:1.7rem;
     @media(min-width:600px){
         font-size:2rem;
+        padding-left:2rem;
     }
 }
 
@@ -278,6 +280,9 @@ a{
     } 
     @media(min-width:700px){
         width:50%;
+    }
+    @media(min-width:1000px){
+        width:40%;
     }
     
 }

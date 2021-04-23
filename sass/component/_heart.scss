@@ -13,7 +13,7 @@
     -moz-text-stroke: 1.2px $black;
     background-image: hidden;
     align-self:center;
-    padding-right:10px;
+    padding:10px;
     &:hover{
        -webkit-text-stroke: $white;
         background-image:linear-gradient(to top,#9356dc, #ee5fca, #FF79DA);

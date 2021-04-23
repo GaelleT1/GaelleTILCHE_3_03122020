@@ -22,5 +22,9 @@
     
     &__arrow{
        font-size: 1.5rem;
+       @media(min-width:700px){
+        padding-left:20px;
+        padding-right:200px;
+       }
     }
 }      
