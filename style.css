@@ -415,13 +415,6 @@ a {
   font-weight: bold;
 }
 
-.features__button:hover {
-  background-color: #e6e6fa;
-}
-.features__button:hover .fas {
-  color: #9356dc;
-}
-
 .restos {
   background: #f5f5f5;
   padding: 15px 0px;
