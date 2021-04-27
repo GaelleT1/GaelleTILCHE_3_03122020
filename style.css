@@ -183,21 +183,21 @@
   }
 }
 
-.footer {
+footer {
   background: #353535;
   line-height: 2rem;
   color: #ffffff;
 }
-.footer .footer__logo {
+footer .footer__logo {
   font-weight: normal;
   padding-left: 40px;
   padding-top: 20px;
   font-size: 1.2rem;
 }
-.footer .footer__icon {
+footer .footer__icon {
   padding-right: 0.5rem;
 }
-.footer .footer--link {
+footer .footer--link {
   color: #ffffff;
 }
 
