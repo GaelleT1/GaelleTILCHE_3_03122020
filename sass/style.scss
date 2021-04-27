@@ -217,7 +217,7 @@ a{
         position: relative;
         background: $whitesmoke;
         border-radius: 40px 40px 0px 0px;
-            
+        
     }
                 
 }
@@ -235,6 +235,8 @@ a{
 .items{
     @include flexAlign();
     background:$whitesmoke;
+    justify-content:center ;
+    
 }
   
 .items h3{
@@ -243,10 +245,15 @@ a{
     font-weight:lighter;
     font-family:"roboto";
     border-bottom: solid 3px $mint;
+   
 }
 
 .items__title{
-    align-self:flex-start
+    align-self:flex-start;
+    @media(min-width:1000px){
+        flex-basis:100%;
+    }
+    
 }
 
 .description__content{
@@ -278,7 +285,9 @@ a{
     height: 4.5rem;
     width:80%;
     
+    
     &:hover{
+        cursor:pointer;
         .switch--opened{
             display:flex;
             animation:switch 1s ease alternate;
@@ -292,7 +301,7 @@ a{
         width:50%;
     }
     @media(min-width:1000px){
-        width:35%;
+        width:30%;
     }
     
 }
@@ -312,45 +321,27 @@ a{
     margin:1rem;
 }
 
-.items__description{
+.menu__category{
     
     animation:appear 4s ease forwards ;
     
     
-    &:nth-child(2) {
+    &:nth-child(1) {
         animation-delay: 0.5s;
     }
         
-    &:nth-child(3){animation-delay: 1s;
+    &:nth-child(2){animation-delay: 1s;
     }
         
-    &:nth-child(4){
+    &:nth-child(3){
         animation-delay: 1.5s;
     }
 
-    &:nth-child(6) {
+    &:nth-child(4) {
             animation-delay: 2s;
     }
         
-    &:nth-child(7) {
-        animation-delay: 2.5s;
-    }
-        
-    &:nth-child(8) {
-        animation-delay: 3s;
-    }
-
-    &:nth-child(10) {
-        animation-delay: 3.5s;
-    }
-            
-    &:nth-child(11) {
-        animation-delay: 4s;
-    }
-
-    &:nth-child(12) {
-        animation-delay: 4.5s;
-    }
+    
 }      
         
        
@@ -381,7 +372,16 @@ a{
     }
 }
 
-
+.menu__category{
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    @media(min-width:1000px){
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
 
 
 

@@ -303,6 +303,7 @@
 @media (min-width: 600px) {
   .btn--pink {
     width: 300px;
+    margin: 30px auto;
   }
 }
 
@@ -327,6 +328,7 @@
   -webkit-text-stroke: #ffffff;
   background-image: linear-gradient(to top, #9356dc, #ee5fca, #FF79DA);
   animation: progressive ease-in-out 1s;
+  cursor: pointer;
 }
 .fa-heart:active {
   background-image: visible;
@@ -553,6 +555,7 @@ a {
   flex-direction: column;
   align-items: center;
   background: #f5f5f5;
+  justify-content: center;
 }
 
 .items h3 {
@@ -565,6 +568,11 @@ a {
 
 .items__title {
   align-self: flex-start;
+}
+@media (min-width: 1000px) {
+  .items__title {
+    flex-basis: 100%;
+  }
 }
 
 .description__content {
@@ -596,6 +604,9 @@ a {
   height: 4.5rem;
   width: 80%;
 }
+.items__description:hover {
+  cursor: pointer;
+}
 .items__description:hover .switch--opened {
   display: flex;
   animation: switch 1s ease alternate;
@@ -610,7 +621,7 @@ a {
 }
 @media (min-width: 1000px) {
   .items__description {
-    width: 35%;
+    width: 30%;
   }
 }
 
@@ -628,35 +639,20 @@ a {
   margin: 1rem;
 }
 
-.items__description {
+.menu__category {
   animation: appear 4s ease forwards;
 }
-.items__description:nth-child(2) {
+.menu__category:nth-child(1) {
   animation-delay: 0.5s;
 }
-.items__description:nth-child(3) {
+.menu__category:nth-child(2) {
   animation-delay: 1s;
 }
-.items__description:nth-child(4) {
+.menu__category:nth-child(3) {
   animation-delay: 1.5s;
 }
-.items__description:nth-child(6) {
+.menu__category:nth-child(4) {
   animation-delay: 2s;
-}
-.items__description:nth-child(7) {
-  animation-delay: 2.5s;
-}
-.items__description:nth-child(8) {
-  animation-delay: 3s;
-}
-.items__description:nth-child(10) {
-  animation-delay: 3.5s;
-}
-.items__description:nth-child(11) {
-  animation-delay: 4s;
-}
-.items__description:nth-child(12) {
-  animation-delay: 4.5s;
 }
 
 .switch--opened {
@@ -676,6 +672,19 @@ a {
   font-size: 1.5rem;
   position: absolute;
   transition-duration: 1.5s ease-in-out;
+}
+
+.menu__category {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+@media (min-width: 1000px) {
+  .menu__category {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
