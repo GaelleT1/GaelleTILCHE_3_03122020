@@ -21,16 +21,12 @@
         cursor:pointer;
     }
 
-    &:active{
-        background-image:visible;
-        background-image: linear-gradient(to top,#9356dc, #ee5fca, #FF79DA);
-    }
-    
 }
+
 .liked{
     bottom:120px;
     font-size:14px;
     visibility:hidden;
-    color:linear-gradient(to top,#9356dc, #ee5fca, #FF79DA);
-  }
+    color:linear-gradient(#9356dc, #ee5fca, #FF79DA);
+}
 

@@ -125,13 +125,7 @@ a{
     display:flex;
     flex-direction: column;
     @include Shadow;
-    transition: 0.5s ease-in-out;
-    scale: 1;
-    -webkit-transition: 0.5s ease-in-out ;
-    &:hover{
-        transform:scale (1.02);
-        -webkit-transform: scale(1.02);
-    }
+    
 
     @media(min-width:1000px){
        width:90%;

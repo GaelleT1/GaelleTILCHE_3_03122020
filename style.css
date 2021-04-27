@@ -77,7 +77,6 @@
   justify-content: center;
   padding-top: 200px;
   top: 0;
-  bottom: 50;
   background: whitesmoke;
   opacity: 1;
   z-index: 1000;
@@ -334,16 +333,12 @@ footer .footer--link {
   animation: progressive ease-in-out 1s;
   cursor: pointer;
 }
-.fa-heart:active {
-  background-image: visible;
-  background-image: linear-gradient(to top, #9356dc, #ee5fca, #FF79DA);
-}
 
 .liked {
   bottom: 120px;
   font-size: 14px;
   visibility: hidden;
-  color: linear-gradient(to top, #9356dc, #ee5fca, #FF79DA);
+  color: linear-gradient(#9356dc, #ee5fca, #FF79DA);
 }
 
 * {
@@ -457,13 +452,6 @@ a {
   box-shadow: 3px 5px 3px 4px #d3d3d3;
   -webkit-box-shadow: 3px 5px 3px 4px #d3d3d3;
   -moz-box-shadow: 3px 5px 3px 4px #d3d3d3;
-  transition: 0.5s ease-in-out;
-  scale: 1;
-  -webkit-transition: 0.5s ease-in-out;
-}
-.figure:hover {
-  transform: scale 1.02;
-  -webkit-transform: scale(1.02);
 }
 @media (min-width: 1000px) {
   .figure {
