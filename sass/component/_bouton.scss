@@ -11,9 +11,10 @@
     font-size:0.8rem; 
     border:none;
     @include Shadow;
-    &:hover,&:focus {
+    &:hover {
         background-image:linear-gradient(rgb(160, 161, 235), rgb(248, 95, 202),rgb(265, 121, 218));
         box-shadow: 3px 5px 3px 4px#aaa6a6;
+        transition: all 0.5s ease-in-out;
     }
     
     @media(min-width:600px){
