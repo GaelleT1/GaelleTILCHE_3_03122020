@@ -217,7 +217,9 @@ a{
         position: relative;
         background: $whitesmoke;
         border-radius: 40px 40px 0px 0px;
-        
+        @media(min-width:1000px){
+            margin:-3.5rem 20px 0 20px;
+        }
     }
                 
 }
@@ -236,6 +238,9 @@ a{
     @include flexAlign();
     background:$whitesmoke;
     justify-content:center ;
+    @media(min-width:1000px){
+        margin:0 20px;
+    }
     
 }
   
@@ -290,10 +295,10 @@ a{
         cursor:pointer;
         .switch--opened{
             display:flex;
-            animation:switch 1s ease alternate;
+            animation:switch 1s cubic-bezier(.17,.67,.83,.67) forwards alternate;
         }   
         .switch__icon{
-            animation:rotate 0.5s ease-in-out ;
+            animation:rotate 0.5s ease-in-out forwards alternate;
             
         }
     } 
@@ -323,38 +328,38 @@ a{
 
 .menu__category{
     
-    animation:appear 4s ease forwards ;
-    
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    animation:appear 3s cubic-bezier(.17,.67,.83,.67) forwards;
+    opacity:0;
+        @media(min-width:1000px){
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
     
     &:nth-child(1) {
-        animation-delay: 0.5s;
+        animation-delay: 1s ;
     }
         
-    &:nth-child(2){animation-delay: 1s;
+    &:nth-child(2){
+        animation-delay: 2s ;
     }
         
     &:nth-child(3){
-        animation-delay: 1.5s;
-    }
-
-    &:nth-child(4) {
-            animation-delay: 2s;
-    }
-        
+        animation-delay: 3s ;
+    }       
     
 }      
-        
-       
-    
-       
+
+          
 .switch--opened{
    display:none;
     align-items: center;
     justify-content:center;
-    transition: all 2s ease-in-out;
+    transition: all 2s ease-in-out ;
  
-    
-      
     .switch__background{
         background:$mint;
         border-radius: 0px 15px 15px 0px;
@@ -372,16 +377,7 @@ a{
     }
 }
 
-.menu__category{
-    display:flex;
-    flex-direction: column;
-    width: 100%;
-    align-items: center;
-    @media(min-width:1000px){
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-}
+
 
 
 
