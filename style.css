@@ -625,7 +625,7 @@ footer .footer--link {
   background-size: cover;
   -webkit-text-stroke: 1.2px #000000;
   -moz-text-stroke: 1.2px #000000;
-  background-image: hidden;
+  background-image: none;
   align-self: center;
   padding: 10px;
 }
@@ -640,7 +640,7 @@ footer .footer--link {
   bottom: 120px;
   font-size: 14px;
   visibility: hidden;
-  color: linear-gradient(#9356dc, #ee5fca, #FF79DA);
+  background-color: linear-gradient(#9356dc, #ee5fca, #FF79DA);
 }
 
 .switch--opened {
