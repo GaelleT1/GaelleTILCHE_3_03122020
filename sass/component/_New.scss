@@ -1,0 +1,19 @@
+.box--new{
+    display:flex;
+    justify-content:flex-end;
+    
+    .new{
+        position:absolute;
+        color:$green;
+        background:$aquamarine;
+        height:30px;
+        width:80px;
+        font-size:1rem;
+        text-align: center;
+        padding-top: 4px;
+        margin-top:1rem;
+        margin-right:1rem;
+    }
+}
+
+
