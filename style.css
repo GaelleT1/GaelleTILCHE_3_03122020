@@ -303,6 +303,9 @@ a {
   padding-right: 5px;
 }
 .features__btn:hover {
+  box-shadow: 3px 5px 3px 4px #aaa6a6;
+  -webkit-box-shadow: 3px 5px 3px 4px #aaa6a6;
+  -moz-box-shadow: 3px 5px 3px 4px #aaa6a6;
   background-color: #e6e6fa;
   transition: all 0.5s ease-in-out;
 }
@@ -370,6 +373,11 @@ a {
   box-shadow: 3px 5px 3px 4px #d3d3d3;
   -webkit-box-shadow: 3px 5px 3px 4px #d3d3d3;
   -moz-box-shadow: 3px 5px 3px 4px #d3d3d3;
+}
+.figure:hover {
+  box-shadow: 3px 5px 3px 4px #aaa6a6;
+  -webkit-box-shadow: 3px 5px 3px 4px #aaa6a6;
+  -moz-box-shadow: 3px 5px 3px 4px #aaa6a6;
 }
 @media (min-width: 1000px) {
   .figure {
@@ -490,6 +498,9 @@ a {
   width: 80%;
 }
 .items__description:hover {
+  box-shadow: 3px 5px 3px 4px #aaa6a6;
+  -webkit-box-shadow: 3px 5px 3px 4px #aaa6a6;
+  -moz-box-shadow: 3px 5px 3px 4px #aaa6a6;
   cursor: pointer;
 }
 .items__description:hover .switch--opened {
@@ -603,6 +614,8 @@ footer .footer--link {
 .btn--pink:hover {
   background-image: linear-gradient(#a0a1eb, #f85fca, #ff79da);
   box-shadow: 3px 5px 3px 4px #aaa6a6;
+  -webkit-box-shadow: 3px 5px 3px 4px #aaa6a6;
+  -moz-box-shadow: 3px 5px 3px 4px #aaa6a6;
   transition: all 0.5s ease-in-out;
 }
 @media (min-width: 600px) {

@@ -46,6 +46,7 @@
     background-color: $whitesmoke;
     padding-right: 5px;
     &:hover{
+        @include ShadowHover;
         background-color:$lavender;
         transition: all 0.5s ease-in-out;
         .fas{ 

@@ -86,6 +86,7 @@
     
     
     &:hover{
+        @include ShadowHover;
         cursor:pointer;
         .switch--opened{
             display:flex;
