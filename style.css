@@ -673,7 +673,7 @@ footer .footer--link {
   color: #ffffff;
   font-size: 1.5rem;
   position: absolute;
-  transition-duration: 1.5s ease-in-out;
+  transition: 1.5s ease-in-out;
 }
 
 /*# sourceMappingURL=style.css.map */
