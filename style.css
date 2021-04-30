@@ -632,7 +632,6 @@ footer .footer--link {
   color: transparent;
   overflow: hidden;
   display: inline-block;
-  background-clip: text;
   -webkit-background-clip: text;
   -moz-background-clip: text;
   background-size: cover;
@@ -653,7 +652,7 @@ footer .footer--link {
   bottom: 120px;
   font-size: 14px;
   visibility: hidden;
-  background-color: linear-gradient(#9356dc, #ee5fca, #FF79DA);
+  background: linear-gradient(#9356dc, #ee5fca, #FF79DA);
 }
 
 .switch--opened {
