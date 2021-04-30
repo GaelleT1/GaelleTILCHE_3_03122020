@@ -661,13 +661,15 @@ footer .footer--link {
   justify-content: center;
   transition: all 2s ease-in-out;
 }
-.switch--opened .switch__background {
+
+.switch__background {
   background: #99E2D0;
   border-radius: 0px 15px 15px 0px;
   width: 4rem;
   height: 100%;
 }
-.switch--opened .switch__icon {
+
+.switch__icon {
   color: #ffffff;
   font-size: 1.5rem;
   position: absolute;
